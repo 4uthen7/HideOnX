@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "X Profile Particle Remover",
+  "version": "1.0",
+  "description": "Xの左下のユーザー情報パーティクルを自動削除",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
